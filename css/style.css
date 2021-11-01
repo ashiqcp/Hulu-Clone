@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0; 
+}
+html,
+body{
+  font-family: 'Rubik', sans-serif;
+  background: hsl(225deg 80% 96%);
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+a:hover{
+  color: #ccc;
+}
+ul{
+  list-style-type: none;
+}
+img{
+  width: 100%;
+}
+.header{
+  height: 520px;
+  background: url(../img/header.jpg)
+  no-repeat center center / cover;
+}
+.header nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+.header nav .login-btn{
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.header-content h4{
+  color: #1ce783;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 13px;
+}
+.header .logo{
+  width: 270px;
+  margin: 20px 0;
+}
+.header .header-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+.header .header-text-1{
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.header .header-text-2{
+  font-size: 15px;
+  margin-top: 10px;
+}
+.header .btn{
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  margin: 10px 0px;
+  border: none;
+  font-weight: 1000;
+  line-height: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header .btn-trial:hover{
+  opacity:0.8 ;
+}
+.header .header-text-3{
+  font-size: 9px;
+  color: rgb(167, 167, 167);
+}
+
+/*Sub Header*/
+.sub-heading{
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  gap: 40px;
+  align-items: center;
+  padding: 10px 40px;
+  background: rgba(0, 0, 0, 0.438);
+  margin: 10px 0px;
+}
+.sub-heading h4{
+  font-weight: normal;
+  color: #1ce783;
+  font-size: 12px;
+}
+.sub-heading h3{
+  font-weight: normal;
+  font-size: 18px;
+}
+.sub-heading .details-link{
+  font-weight: normal;
+  font-size: 15px;
+  color: rgb(167, 167, 167);
+}
+.sub-heading .details-link:hover{
+  color: rgb(255, 255, 255);
+}
+.sub-heading .btn-outline{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 240px;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.sub-heading .terms-link{
+  display: block;
+  color: rgb(167, 167, 167);
+  font-size: 11px;
+}
+.sub-heading .terms-link:hover{
+  color: rgb(255, 255, 255);
+}
+/* Media Queries*/
+@media(max-width:768px){
+  .header{
+    height: 660px;
+  }
+  .header .logo{
+    width: 200px;
+  }
+  .header .header-content{
+    text-align: center;
+    padding: 0 18px;
+  }
+  .header .header-content .header-text-2{
+    display: none;
+  }
+  .sub-heading{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+  .sub-heading img{
+    width: 250px;
+    margin: auto;
+  }
+  .sub-heading h4{
+    margin: auto;
+  }
+  .sub-heading button{
+    margin: auto;
+  }
+}
+.movieRow{
+  margin: 30px;
+}
+.mainCard{
+  display:inline-block;
+  margin: 10px;
+  overflow:hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 218px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topCard{
+  height: 205px;
+  background: linear-gradient(180deg,transparent,rgba(3, 5, 7, 0.1),rgb(20, 20, 20)),url(https://pbs.twimg.com/profile_images/1277219228077219845/dtJ4adhB.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  overflow:hidden;
+}
+.prize{
+  background: #fff;
+  color: #000;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 170px;
+  margin-top: 130px;
+}
+.bottomCard{
+  padding: 7px;
+  color:rgb(0, 0, 0);
+  line-height: 1.3;
+}
+.name{
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  padding: 0 0 0 10px;
+
+}
+.ugName{
+  display: block;
+  font-family: 'Montserrat';
+  padding: 0 0 0 10px;
+  font-size: 12px;
+  color: #8d8d8d;
+}
+
+
+
+.rankCard{
+  display:inline-block;
+  margin: 40px;
+  overflow:hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 218px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topCard{
+  height: 205px;
+  background: linear-gradient(180deg,transparent,rgba(3, 5, 7, 0.1),rgb(20, 20, 20)),url(https://pbs.twimg.com/profile_images/1277219228077219845/dtJ4adhB.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  overflow:hidden;
+}
+.prize{
+  background: #fff;
+  color: #000;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 170px;
+  margin-top: 130px;
+}
+.bottomCard{
+  padding: 7px;
+  color:rgb(0, 0, 0);
+  line-height: 1.3;
+}
+.name{
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  padding: 0 0 0 10px;
+
+}
+.ugName{
+  display: block;
+  font-family: 'Montserrat';
+  padding: 0 0 0 10px;
+  font-size: 12px;
+  color: #8d8d8d;
+}
